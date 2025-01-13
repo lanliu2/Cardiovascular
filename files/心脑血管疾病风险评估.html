@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>心脑血管疾病数据库</title>
+<style type="text/css">
+</style>
+</head>
+
+<body background="../主页背景4.jpg">
+<p>&nbsp; </p>
+<form id="form1" name="form1" method="post">
+  <p>&nbsp;</p>
+  <p><img src="../数据库logo.gif" width="702" height="155" alt=""/></p>
+</form>
+<p>&nbsp;</p>
+<table width="100%" border="1" align="center" style="">
+	<tr bgcolor="rgba(255,255,255,1.00)"></tr>
+  <tbody>
+    <tr>
+      <th width="312" height="151" scope="col"><a href="../index.html">首页</a></th>
+      <th width="312" scope="col"><p><a href="疾病基本信息.html">疾病基本信息</a></p></th>
+      <th width="312" style="text-align: center" scope="col"><a href="心脑血管疾病风险评估.html">心脑血管疾病风险评估</a></th>
+      <th width="240" scope="col"><a href="药物预测.html">药物预测</a></th>
+    </tr>
+  </tbody>
+</table>
+	<head>
+    <p style="text-align: center; font-family: '黑体'; font-size: 24px; color: rgba(253,1,178,1);">心脑血管疾病风险评估</p>
+    <title></title>
+<div style="width: 1500px; color: rgba(172,0,1,1);">
+    <div class="tab-bar">
+        <ul>
+            <li class="act">相关介绍</li></ul>
+  </div>
+        <p>心脑血管病风险评估工具提供了一款针对中国人心脑血管病（包括急性心肌梗死、冠心病死亡和脑卒中）发病风险进行评估和健康指导的实用工具，本工具适用于20岁及以上、无心脑血管病史的人群。</p><p>请在评估表格中输入您的信息，本工具将根据这些信息：</p><p>1. 评估您未来发生心脑血管病的风险和理想危险因素状态下的参考风险；</p><p>2. 给出心脑血管病发病风险分层，包括低危（<20%）、中危（20%-50%）或高危（≥50%）</p><p> 温馨提示：本工具仅用于心脑血管病风险的初步评估，不能代替临床诊断，具体治疗措施请咨询专业医师。</p>
+        <div style=" clear:both"></div>
+</div>
+<div style="padding: 16px 16px 8px; line-height:180%; text-indent:2em; font-size:16px;"></div>
+<div  style=" width:1000px;">
+    <div>
+        <ul>
+            <li class="act" style="color: rgba(253,1,178,1);">
+      心脑血管病风险评估</li></ul>
+    </div>
+    <form autocomplete="off">
+        <div class="form-group">
+          <label class="col-sm-8">
+                <span class="eval-quest-num" style="text-align: center">&nbsp; 01</span><span style="text-align: center">性别</span></label>
+<div class="col-sm-4">
+  <input type="radio" name="sex" id="man" value='1'>
+                    男
+                    <input type="radio" name="sex" id="woman" value='2'>女
+
+                    <br>
+          <span style="text-align: left"></span></div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">02</span>年龄</label>
+            <div class="col-sm-4">
+                <input type="number"  id="age" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">03</span>身高(cm)</label>
+            <div class="col-sm-4">
+                <input type="number"  id="height" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">04</span>体重(kg)</label>
+            <div class="col-sm-4">
+                <input type="number"  id="weight" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">05</span>收缩压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  id="ap_hi" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">06</span>舒张压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  id="ap_lo" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">07</span>胆固醇(1:[<6mmol/L]; 2:[6~9mmol/L]; 3:[>9mmol/L])</label>
+            <div class="col-sm-4">
+                <input type="number"  id="cholester" placeholder="请输入1,2或3" class="form-control">
+          </div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-4" style="line-height: 36px;">
+                <span class="eval-quest-num">08</span>葡萄糖(1:[<6mmol/L]; 2:[6~9mmol/L]; 3:[>9mmol/L])</label>
+            <div class="col-sm-4"> 
+                <input type="number"  id="gluc" placeholder="请输入1,2或3"  class="form-control">
+            </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">09</span>是否抽烟</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value=1>是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value=2>否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">10</span>是否喝酒</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value=1>是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value=2>否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">11</span>体育活动</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="active" value=1>活跃
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="active" value=2>不活跃
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-5">
+                <button type="button" class="btn btn-79063f" onclick="frmSubmit()">
+                    提交</button>
+            </div>
+        </div>
+        <div>
+            <p>心脑血管疾病患病风险：</p>
+        </div>
+        <div id="output"></div>
+    </form>
+<script>
+    function frmSubmit(){
+    var age=document.getElementById("age").value;
+    var height=document.getElementById("height").value;
+    var weight=document.getElementById("weight").value;
+    var bmi=weight/(height/100)**2;
+    var ap_hi=document.getElementById("ap_hi").value;
+    var ap_lo=document.getElementById("ap_lo").value;
+    var cholester=document.getElementById("cholester").value;
+    var output=document.getElementById("output");
+    var p=1/(1+1/2.71828**(-9.7316849+0.0533009322*age+0.0429904664*ap_hi+0.000276130641*ap_lo+0.464951591*cholester+0.0290231179*bmi))*100
+    p1=p.toFixed(3)
+    console.log(p1);
+    output.innerHTML=p1+" %"
+    }
+</script>
+<div style="padding: 16px 16px 8px; line-height: 180%; text-indent: 2em; font-size: 16px; text-align: center;"></div>
+</body>
+</html>

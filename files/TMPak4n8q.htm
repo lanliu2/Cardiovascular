@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>心脑血管疾病数据库</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+</head>
+
+<body background="../主页背景4.jpg" onLoad="MM_openBrWindow('','风险评估','menubar=yes,width=40,height=60')">
+<p>&nbsp; </p>
+<form id="form1" name="form1" method="post">
+  <p>&nbsp;</p>
+  <p><img src="../数据库logo.gif" width="702" height="155" alt=""/></p>
+</form>
+<p>&nbsp;</p>
+<table width="100%" border="1" align="center">
+  <tbody>
+    <tr>
+      <th width="312" height="151" scope="col"><a href="../index.html">首页</a></th>
+      <th width="312" scope="col"><p><a href="疾病基本信息.html">疾病基本信息</a></p></th>
+      <th width="312" style="text-align: center" scope="col"><a href="心脑血管疾病风险评估.html">心脑血管疾病风险评估</a></th>
+      <th width="240" scope="col"><a href="药物预测.html">药物预测</a></th>
+    </tr>
+  </tbody>
+</table>
+	<head>
+    <p style="text-align: center; font-family: '黑体'; font-size: 24px; color: rgba(253,1,178,1);">心脑血管疾病风险评估</p>
+    <title></title>
+<div  style=" width:1000px;">
+<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="69%" height="33" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span style="text-align: center">性别：</span></td>
+      <td width="31%" align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+      <input type="radio" name="sex" id="man" value='1'>
+男
+<input type="radio" name="sex" id="woman" value='2'>
+女 </span></td>
+    </tr>
+    <tr>
+      <td height="35" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8">年龄：</label>
+      </span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+      <input type="number"  id="age" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td height="30" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8">身高(cm)</label>
+        ：</span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+      <input type="number"  id="height" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td height="42" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8"><span class="eval-quest-num"></span>体重(kg)</label>
+        ：
+      </span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <input type="number"  id="height2" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td height="35" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8">收缩压(mmHg)</label>
+        ：
+      </span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <input type="number"  id="height3" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td height="29" align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8">舒张压(mmHg)：</label>
+      </span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <input type="number"  id="height4" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-8" style="line-height: 36px;">胆固醇(1:[<6mmol/L]; 2:[6~9mmol/L]; 3:[>9mmol/L])</span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <input type="number"  id="height5" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><label class="col-sm-4" style="line-height: 36px;">葡萄糖(1:[<6mmol/L]; 2:[6~9mmol/L]; 3:[>9mmol/L])</label></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <input type="number"  id="height6" class="form-control">
+      </span></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8" style="line-height: 36px;">是否抽烟</label>
+        ：
+      </span></td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="smoke" value=1>
+          是 </label>
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="smoke" value=2>
+          否</label>
+      </span></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group">
+        <label class="col-sm-8" style="line-height: 36px;">是否喝酒</label>
+      </span>：</td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="smoke" value=1>
+          是 </label>
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="smoke" value=2>
+          否</label>
+      </span></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="form-group form-group-odd">
+        <label class="col-sm-8" style="line-height: 36px;">体育活动</label>
+      </span>：</td>
+      <td align="left" bgcolor="#FFFFFF" style="font-family: '宋体'"><span class="col-sm-4">
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="active" value=1>
+          活跃 </label>
+        <label class="checkbox-inline i-checks">
+          <input type="radio" name="active" value=2>
+          不活跃 </label>
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td height="51" align="center" bgcolor="#FFFFFF"><button type="button" class="btn btn-79063f" onclick="frmSubmit()"> 提交</button></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50%" align="right" bgcolor="#8411B5"><span style="font-family: '黑体'; font-size: 24px; color: rgba(0,0,0,1);">心脑血管疾病患病风险</span>：</td>
+      <td width="50%" bgcolor="#8411B5">&nbsp;</td>
+	  <div id="output"></div>
+    </tr>
+  </tbody>
+</table>
+<script>
+    function frmSubmit(){
+    var age=document.getElementById("age").value;
+    var height=document.getElementById("height").value;
+    var weight=document.getElementById("weight").value;
+    var bmi=weight/(height/100)**2;
+    var ap_hi=document.getElementById("ap_hi").value;
+    var ap_lo=document.getElementById("ap_lo").value;
+    var cholester=document.getElementById("cholester").value;
+    var output=document.getElementById("output");
+    var p=1/(1+1/2.71828**(-9.7316849+0.0533009322*age+0.0429904664*ap_hi+0.000276130641*ap_lo+0.464951591*cholester+0.0290231179*bmi))*100
+    p1=p.toFixed(3)
+    console.log(p1);
+    output.innerHTML=p1+" %"
+    }
+</script>
+<div style="padding: 16px 16px 8px; line-height: 180%; text-indent: 2em; font-size: 16px; text-align: center;"></div>
+</body>
+</html>
+<p>&nbsp;</p>
+<div style="width: 1500px; color: rgba(172,0,1,1);">
+  <div class="tab-bar">
+    <ul>
+      <li class="act">相关介绍</li>
+    </ul>
+  </div>
+  <p>心脑血管病风险评估工具提供了一款针对中国人心脑血管病（包括急性心肌梗死、冠心病死亡和脑卒中）发病风险进行评估和健康指导的实用工具，本工具适用于20岁及以上、无心脑血管病史的人群。</p>
+  <p>请在评估表格中输入您的信息，本工具将根据这些信息：</p>
+  <p>1. 评估您未来发生心脑血管病的风险和理想危险因素状态下的参考风险；</p>
+  <p>2. 给出心脑血管病发病风险分层，包括低危（<20%）、中危（20%-50%）或高危（≥50%）</p>
+  <p> 温馨提示：本工具仅用于心脑血管病风险的初步评估，不能代替临床诊断，具体治疗措施请咨询专业医师。</p>
+  <div style=" clear:both"></div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<div style="padding: 16px 16px 8px; line-height: 180%; text-indent: 2em; font-size: 16px; text-align: center;">
+<script>
+    function frmSubmit(){
+    var age=document.getElementById("age").value;
+    var height=document.getElementById("height").value;
+    var weight=document.getElementById("weight").value;
+    var bmi=weight/(height/100)**2;
+    var ap_hi=document.getElementById("ap_hi").value;
+    var ap_lo=document.getElementById("ap_lo").value;
+    var cholester=document.getElementById("cholester").value;
+    var output=document.getElementById("output");
+    var p=1/(1+1/2.71828**(-9.7316849+0.0533009322*age+0.0429904664*ap_hi+0.000276130641*ap_lo+0.464951591*cholester+0.0290231179*bmi))*100
+    p1=p.toFixed(3)
+    console.log(p1);
+    output.innerHTML=p1+" %"
+    }
+  </script>
+</html>

@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>心脑血管疾病数据库</title>
+<style type="text/css">
+</style>
+</head>
+
+<body background="../主页背景4.jpg">
+<form id="form1" name="form1" method="post">
+  <p>&nbsp;</p>
+  <p><img src="../数据库logo.gif" width="561" height="93" alt=""/></p>
+</form>
+<p>&nbsp;</p>
+<table width="100%" border="1" align="center">
+  <tbody>
+    <tr>
+      <th width="312" height="151" scope="col"><a href="../index.html">首页</a></th>
+      <th width="312" scope="col"><p><a href="疾病基本信息.html">疾病基本信息</a></p></th>
+      <th width="312" scope="col"><a href="心脑血管疾病风险评估.html">心脑血管疾病风险评估</a></th>
+      <th width="240" scope="col"><a href="药物预测.html">药物预测</a></th>
+    </tr>
+  </tbody>
+</table>
+<p style="text-align: center; font-size: 24px;">相关说明</p>
+<p style="text-align: center">心脑血管病风险评估工具提供了一款针对中国人心脑血管病（包括急性心肌梗死、冠心病死亡和脑卒中）发病风险进行评估和健康指导的实用工具，本工具适用于20岁及以上、无心脑血管病史的人群。</p>
+<p>请在评估表格中输入您的信息，本工具将根据这些信息：</p>
+<p>1. 评估您未来发生心脑血管病的风险和理想危险因素状态下的参考风险；</p>
+<p>2. 给出心脑血管病发病风险分层，包括10年风险分层：低危（<5%）、中危（5%-9.9%）或高危（≥10%）</p>
+<p>终生风险（从目前生存至85岁时发生心脑血管病的风险）分层：低危（<32.8%）或高危（≥32.8%）；</p>
+<p>3. 针对不同风险分层和单个危险因素水平给出相应提示和建议，详细指导参见“健康指导”部分。</p>
+<form id="form2" name="form2" method="post">
+  <p style="text-align: center">&nbsp;</p>
+<p style="text-align: center"><div class="tab-bar" style="font-family: '黑体'; text-align: center; font-size: 24px; color: rgba(245,13,124,1);">心脑血管病风险评估
+  </div>
+    <div style="clear: none;">
+    <form>
+      <div class="form-group">
+        <p>
+              <label class="col-sm-8">
+            <span class="eval-quest-num" style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="text-align: center; font-family: '黑体';">&nbsp;&nbsp;&nbsp;&nbsp;                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-align: center; color: rgba(36,35,181,1);">01性别</span></span></label>
+          </p>
+            <div class="col-sm-4">
+                <p>
+                  <label class="checkbox-inline i-checks">
+                    <span style="text-align: center">
+                    <input type="radio" name="sex" value="1">
+                    男
+                  </span></label>
+                  <span style="text-align: center">
+                  <label class="checkbox-inline i-checks">
+                    <input type="radio" name="sex" value="2">
+                    女
+                  </label>
+                  </span>
+                  <span style="text-align: center">
+                  <label class="checkbox-inline i-checks"></label>
+              </span><span style="font-family: '黑体'">              </span>                </p>
+        </div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num" style="text-align: center">02</span><span style="text-align: center">年龄（天）</span></label>
+            <div class="col-sm-4">
+          <input type="number"  name="age" class="form-control"></div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">03</span>身高(cm)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="height" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">04</span>体重(kg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="weight" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">05</span>收缩压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="ap_hi" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">06</span>舒张压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="ap_lo" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-4" style="line-height: 36px;">
+                <span class="eval-quest-num">07</span>胆固醇</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" checked value="1">
+                   正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" value="2">
+                    高于正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" value="3">
+                    远高于正常
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-4" style="line-height: 36px;">
+                <span class="eval-quest-num">08</span>葡萄糖</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" checked value="1">
+                   正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" value="2">
+                    高于正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" value="3">
+                    远高于正常
+                </label>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">09</span>是否抽烟</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value="1">
+                    是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value="2">
+                    否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">10</span>是否喝酒</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value="1">
+                    是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value="2">
+                    否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+      <div class="form-group form-group-odd">
+            <p>
+              <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">11</span>体育活动</label>
+            </p>
+            <div class="col-sm-4">
+              <p>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="csmoke" value="1">
+                    活跃
+                </label>
+                  <label class="checkbox-inline i-checks">
+                    <input type="radio" name="csmoke" value="2">
+                    不活跃
+                  </label>
+              </p>
+          </div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-5">
+                <button type="button" class="btn btn-79063f" onclick="frmSubmit()">
+                    提交</button>
+                <label id="error-info" style=" color: #ed5565; margin-top:10px;"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12" style="padding-top: 1em; line-height: 200%;">
+                <p> 温馨提示：本工具仅用于心脑血管病风险的初步评估，不能代替临床诊断，具体治疗措施请咨询专业医师。</p>
+            </div>
+        </div>
+</form>
+    </div>
+</div>
+<div class="clearit"></div>
+<script>
+    $(document).ready(function () {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green'
+        });
+
+        $('[name="tc_unit"]').on("ifClicked", function () {
+            var oriValue = $('[name="tc_unit"]:checked').val()
+            setTimeout(function () {
+                var newValue = $('[name="tc_unit"]:checked').val();
+                if (oriValue != newValue) {
+                    var placeHolder = newValue == 1 ? "80-400" : "2-11";
+                    $("#tc").val("");
+                    $("#tc").attr("placeHolder", placeHolder);
+                }
+            }, 100);
+        });
+
+        $('[name="hdlc_unit"]').on("ifClicked", function () {
+            var oriValue = $('[name="hdlc_unit"]:checked').val()
+            setTimeout(function () {
+                var newValue = $('[name="hdlc_unit"]:checked').val();
+                if (oriValue != newValue) {
+                    var placeHolder = newValue == 1 ? "20-130" : "0.5-4";
+                    $("#hdlc").val("");
+                    $("#hdlc").attr("placeHolder", placeHolder);
+                }
+            }, 100);
+        });
+
+    });
+
+    function frmSubmit() {
+        var frm = $("#frmASCVD").serialize();
+        $.post("/ASCVD/Eval/ValidInput", frm, function (data) {
+            if (!data.result) {
+                $("#error-info").html(data.msg);
+                toastr.error(data.msg);
+                return;
+            }
+            else {
+                $("#frmASCVD").submit();
+            }
+        })
+        return;
+    }
+
+    function validInput(e) {
+        var placeholder = $(e).attr("placeholder").split('-');
+        $(e).parent().children(".err-info").remove();
+        if (parseInt($(e).val()) < parseInt(placeholder[0])) {
+            $(e).parent().addClass("has-error");
+            $(e).parent().append("<span class='help-block err-info m-b-none'>输入数值应在" + $(e).attr("placeholder") + "之间</span>");
+        } else if (parseInt($(e).val()) > parseInt(placeholder[1])) {
+            $(e).parent().addClass("has-error");
+            $(e).parent().append("<span class='help-block err-info m-b-none'>输入数值应在" + $(e).attr("placeholder") + "之间</span>");
+        } else {
+            $(e).parent().removeClass("has-error");
+        }
+    }
+</script>
+<script>
+    var currentImg = 0;
+    swithImg();
+    var timer = setInterval(function () {
+        swithImg();
+    }, 6000);
+
+    function swithImg() {
+        console.log(currentImg);
+        var i = 0;
+        $(".img-switch ul li img").each(function () {
+            if (i == currentImg) {
+                $(this).animate({ 'opacity': "1" }, 1000);
+            } else {
+                $(this).animate({ 'opacity': "0" }, 1000);
+            }
+            i++;
+        });
+
+        currentImg++;
+        if (currentImg == $(".img-switch ul li img").length) {
+            currentImg = 0;
+        }
+    }
+</script>
+        </div>
+    </div>
+</body>
+</html>
+<div class="tab-bar">
+        <ul>
+            <li class="act">
+                心脑血管病风险评估</li></ul>
+  </div>
+    <div style="clear: none;">
+    <form>
+      <div class="form-group">
+            <p>
+              <label class="col-sm-8">
+                <span class="eval-quest-num">01</span>性别</label>
+            </p>
+            <div class="col-sm-4">
+                <p>
+                  <label class="checkbox-inline i-checks">
+                    <input type="radio" name="sex" value="1">
+                    男
+                  </label>
+                  <label class="checkbox-inline i-checks">
+                    <input type="radio" name="sex" value="2">
+                    女
+                  </label>
+                </p>
+        </div>
+      </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">02</span>年龄（天）</label>
+            <div class="col-sm-4">
+                <input type="number"  name="age" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">03</span>身高(cm)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="height" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">04</span>体重(kg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="weight" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">05</span>收缩压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="ap_hi" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8">
+                <span class="eval-quest-num">06</span>舒张压(mmHg)</label>
+            <div class="col-sm-4">
+                <input type="number"  name="ap_lo" class="form-control"></div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-4" style="line-height: 36px;">
+                <span class="eval-quest-num">07</span>胆固醇</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" checked value="1">
+                   正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" value="2">
+                    高于正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="cholester" value="3">
+                    远高于正常
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-4" style="line-height: 36px;">
+                <span class="eval-quest-num">08</span>葡萄糖</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" checked value="1">
+                   正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" value="2">
+                    高于正常
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="gluc" value="3">
+                    远高于正常
+                </label>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group form-group-odd">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">09</span>是否抽烟</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value="1">
+                    是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="smoke" value="2">
+                    否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">10</span>是否喝酒</label>
+            <div class="col-sm-4">
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value="1">
+                    是
+                </label>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="alco" value="2">
+                    否
+                </label>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+      <div class="form-group form-group-odd">
+            <p>
+              <label class="col-sm-8" style="line-height: 36px;">
+                <span class="eval-quest-num">11</span>体育活动</label>
+            </p>
+            <div class="col-sm-4">
+              <p>
+                <label class="checkbox-inline i-checks">
+                    <input type="radio" name="csmoke" value="1">
+                    活跃
+                </label>
+                  <label class="checkbox-inline i-checks">
+                    <input type="radio" name="csmoke" value="2">
+                    不活跃
+                  </label>
+              </p>
+          </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-5">
+                <button type="button" class="btn btn-79063f" onclick="frmSubmit()">
+                    提交</button>
+                <label id="error-info" style=" color: #ed5565; margin-top:10px;"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12" style="padding-top: 1em; line-height: 200%;">
+                <p> 温馨提示：本工具仅用于心脑血管病风险的初步评估，不能代替临床诊断，具体治疗措施请咨询专业医师。</p>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+<div class="clearit"></div>
+<script>
+    $(document).ready(function () {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green'
+        });
+
+        $('[name="tc_unit"]').on("ifClicked", function () {
+            var oriValue = $('[name="tc_unit"]:checked').val()
+            setTimeout(function () {
+                var newValue = $('[name="tc_unit"]:checked').val();
+                if (oriValue != newValue) {
+                    var placeHolder = newValue == 1 ? "80-400" : "2-11";
+                    $("#tc").val("");
+                    $("#tc").attr("placeHolder", placeHolder);
+                }
+            }, 100);
+        });
+
+        $('[name="hdlc_unit"]').on("ifClicked", function () {
+            var oriValue = $('[name="hdlc_unit"]:checked').val()
+            setTimeout(function () {
+                var newValue = $('[name="hdlc_unit"]:checked').val();
+                if (oriValue != newValue) {
+                    var placeHolder = newValue == 1 ? "20-130" : "0.5-4";
+                    $("#hdlc").val("");
+                    $("#hdlc").attr("placeHolder", placeHolder);
+                }
+            }, 100);
+        });
+
+    });
+
+    function frmSubmit() {
+        var frm = $("#frmASCVD").serialize();
+        $.post("/ASCVD/Eval/ValidInput", frm, function (data) {
+            if (!data.result) {
+                $("#error-info").html(data.msg);
+                toastr.error(data.msg);
+                return;
+            }
+            else {
+                $("#frmASCVD").submit();
+            }
+        })
+        return;
+    }
+
+    function validInput(e) {
+        var placeholder = $(e).attr("placeholder").split('-');
+        $(e).parent().children(".err-info").remove();
+        if (parseInt($(e).val()) < parseInt(placeholder[0])) {
+            $(e).parent().addClass("has-error");
+            $(e).parent().append("<span class='help-block err-info m-b-none'>输入数值应在" + $(e).attr("placeholder") + "之间</span>");
+        } else if (parseInt($(e).val()) > parseInt(placeholder[1])) {
+            $(e).parent().addClass("has-error");
+            $(e).parent().append("<span class='help-block err-info m-b-none'>输入数值应在" + $(e).attr("placeholder") + "之间</span>");
+        } else {
+            $(e).parent().removeClass("has-error");
+        }
+    }
+</script>
+<script>
+    var currentImg = 0;
+    swithImg();
+    var timer = setInterval(function () {
+        swithImg();
+    }, 6000);
+
+    function swithImg() {
+        console.log(currentImg);
+        var i = 0;
+        $(".img-switch ul li img").each(function () {
+            if (i == currentImg) {
+                $(this).animate({ 'opacity': "1" }, 1000);
+            } else {
+                $(this).animate({ 'opacity': "0" }, 1000);
+            }
+            i++;
+        });
+
+        currentImg++;
+        if (currentImg == $(".img-switch ul li img").length) {
+            currentImg = 0;
+        }
+    }
+</script>
+        </div>
+    </div>
+</body>
+</html>
+&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
